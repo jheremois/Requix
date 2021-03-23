@@ -8,7 +8,7 @@ Webapp de prueba creada usando [Req | Res](https://reqres.in/) API y Angular
 - [x] Listar usuarios
 - [x] Abrir usuario
 - [x] Crear usuario
-- [ ] Borrar usuario
+- [x] Borrar usuario
 
 ## Development server
 

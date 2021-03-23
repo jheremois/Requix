@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { HttpClient } from "@angular/common/http";
+import { UserService } from 'src/app/services/userservice/user.service';
 
 @Component({
   selector: 'app-create-form',
@@ -13,7 +14,7 @@ export class CreateFormComponent implements OnInit {
   
   @Input() formulario: boolean
 
-  constructor( private builder: FormBuilder, private coneta: HttpClient) {
+  constructor( private builder: FormBuilder, private coneta: HttpClient, private userService: UserService) {
     this.formBuilder();
   }
 

@@ -16,7 +16,6 @@ export class UserslistComponent implements OnInit {
     this._user.conecta().subscribe(
       res => {
         this.users = res['data'];
-        console.log(res['data']);
       }
     )
   }

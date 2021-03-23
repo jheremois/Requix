@@ -3,7 +3,7 @@
     <div class="unu prima">
         <app-user [theuser]="ruta" *ngIf="ruta"></app-user>
         <div class="bots">
-            <a href="/">
+            <a (click)="borra()">
                 Delete
             </a>
         </div>

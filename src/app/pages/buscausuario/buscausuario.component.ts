@@ -18,7 +18,6 @@ export class BuscausuarioComponent implements OnInit {
     this.active.params.subscribe(
       params => {
         this.users = this._userse.buscador( params['un'] )
-        console.log(this.users)
       }
       
     )
