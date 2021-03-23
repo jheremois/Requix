@@ -1,6 +1,6 @@
 # Requix
 
-Webapp de prueba creada usando [Req | Res](https://reqres.in/) API y Angular
+Webapp de prueba creada usando [Req | Res](https://reqres.in/) API y Angular. La app se conecta a la api y envia el resultado de cada consulta en consola.
 
 ## Caracteristicas
 
