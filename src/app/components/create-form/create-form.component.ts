@@ -30,7 +30,10 @@ export class CreateFormComponent implements OnInit {
   envia(){
     //= this.formu.value
 
-    console.log(this.coneta.post("https://reqres.in/api/users", this.formu.value))
+    this.coneta.post("https://reqres.in/api/users", this.formu.value).subscribe(
+      (res) => console.log(res),
+      (err) => console.log(err)
+    )
     
   }
 
