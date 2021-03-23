@@ -50,7 +50,9 @@
             display: flex;
             justify-content: flex-end;
             padding: 10px 0px;
-            button{
+            a{
+                display: flex;
+                justify-content: center;
                 width: 20%;
                 color: white;
                 border-radius: 999px;

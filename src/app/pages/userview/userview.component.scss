@@ -4,9 +4,15 @@ section{
     .unu{
         box-shadow: 6px 3px 5px 0px rgba(48, 48, 48, 0.377);
         overflow: hidden;
-        width: 30vw;
+        width: 28vw;
         border-radius: 10px;
         padding-bottom: 10px;
+        @media (max-width: 599px) {
+            width: 70vw;
+        }
+        @media (max-width: 850px) {
+            width: 50vw;
+        }
         a{
             &:hover{
                 animation: borrar 120ms linear infinite;

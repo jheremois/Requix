@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'user/:id', component: UserviewComponent},
   {path: 'ansu/:un', component: BuscausuarioComponent},
+  {path: 'save', redirectTo: '/'}
 ];
 
 @NgModule({
