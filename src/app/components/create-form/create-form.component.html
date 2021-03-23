@@ -1,21 +1,23 @@
-<div class="form">
+<form action="" method="post" class="form" [formGroup]="formu">
 	<div class="send prima" *ngIf="formulario">
 		<div class="block">
 			<label for="Name" class="prima">
 				Name
 			</label>
-			<input type="text" name="name" id="name" autocomplete="false">
+			<input type="text" name="name" id="name" autocomplete="false" 
+				formControlName="name">
 		</div>
 		<div class="block">
-			<label for="mail" class="prima">
-				E-mail
+			<label for="job" class="prima">
+				Job
 			</label>
-			<input type="email" name="mail" id="mail">
+			<input type="job" name="mail" id="job"
+				   formControlName="job">
 		</div>
 		<div class="block2">
-			<button>
+			<button (click)="envia()">
 				Send
 			</button>
 		</div>
 	</div>
-</div>
+</form>

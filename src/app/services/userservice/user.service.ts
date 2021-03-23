@@ -10,7 +10,7 @@ export class UserService {
 
   constructor(private conet: HttpClient) {
 
-    this.conet.get('https://reqres.in/api/users').subscribe(
+    this.conecta().subscribe(
       res => this.usuarios = res['data']
     )
   

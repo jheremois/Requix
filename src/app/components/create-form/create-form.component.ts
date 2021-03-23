@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-create-form',
@@ -7,11 +9,29 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CreateFormComponent implements OnInit {
 
+  public formu: FormGroup;
+  
   @Input() formulario: boolean
 
-  constructor() {}
+  constructor( private builder: FormBuilder, private coneta: HttpClient) {
+    this.formBuilder();
+  }
 
   ngOnInit(): void {
+  }
+
+  formBuilder(){
+    this.formu = this.builder.group({
+      name: ['', [Validators.required, Validators.min(3)]],
+      job : ['', [Validators.required, Validators.min(3)]]
+    })
+  }
+
+  envia(){
+    //= this.formu.value
+
+    console.log(this.coneta.post("https://reqres.in/api/users", this.formu.value))
+    
   }
 
 }
