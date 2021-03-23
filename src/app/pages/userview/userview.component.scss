@@ -1,0 +1,35 @@
+section{
+    display: flex;
+    justify-content: center;
+    .unu{
+        box-shadow: 6px 3px 5px 0px rgba(48, 48, 48, 0.377);
+        overflow: hidden;
+        width: 30vw;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        a{
+            &:hover{
+                animation: borrar 120ms linear infinite;
+                background-color: rgb(224, 0, 0);
+            }
+            width: 90%;
+            display: flex;
+            padding: 10px 0px;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            margin: 2% 5%;
+            border-radius: 7px;
+            background-color: rgba(212, 31, 31, 0.836);
+            justify-content: center;
+        }
+    }
+}
+@keyframes borrar{
+    0%{
+        transform: rotatez(0.7deg);
+    }
+    100%{
+        transform: rotatez(-0.7deg);
+    }
+}

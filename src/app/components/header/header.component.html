@@ -1,0 +1,17 @@
+<header class="prima">
+    <nav>
+        <button class="create" (click)="openForm()">
+            +
+        </button>
+        <a href="/">
+            <img src="assets/favicon.ico" alt="Logo">
+        </a>
+        <div class="buscador">
+            <input type="search" name="" id="busca" (keyup.enter)="searchu(textoUsuario.value)" #textoUsuario>
+            <button class="envi" (click)="searchu(textoUsuario.value)">
+                <img src="assets/search.svg" alt="tema">
+            </button>
+        </div>
+    </nav>
+</header>
+<app-create-form [formulario]="form"></app-create-form>

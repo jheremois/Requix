@@ -1,0 +1,9 @@
+<a routerLink="/user/{{theuser.id}}">
+    <div class="avatar">
+        <img [src]="theuser.avatar" alt="the user avatar">
+    </div>
+    <div class="info">
+        <p>{{theuser.first_name }} {{ theuser.last_name}}</p>
+        <h2>{{theuser.email}}</h2>
+    </div>
+</a>

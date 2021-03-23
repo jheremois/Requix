@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    &::-webkit-scrollbar{
+        background-color: rgba(255, 255, 255, 0.651);
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #323643;
+        border-radius: 90px;
+    }
+    background-color: #f7f7f7;
+}
+button, a, input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}.prima{
+    background-color: #323643;
+}

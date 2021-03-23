@@ -1,0 +1,77 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    .send{
+        height: 200px;
+        animation: abre normal 1s;
+        overflow: hidden;
+        border-radius: 5px;
+        width: 40%;
+        box-shadow: 6px 6px 5px 0px #3236433b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: 900px) {
+            width: 60%;
+            padding: 7px 0px;
+        }
+        @media (max-width: 599px) {
+            width: 85%;
+            border-radius: 12px;
+            padding: 7px 3px;
+        }
+        .block{
+            padding: 10px 0px;
+            width: 94%;
+            display: flex;
+            flex-direction: column;
+            label{
+                color: #ffff;
+                display: flex;
+                justify-content: center;
+                max-width: 40px;
+                z-index: 10;
+                transform: translate(4px, 6.2px);
+                font-size: 11px;
+                font-weight: 700;
+            }
+            input{
+                border: solid 1px #ffff;
+                padding: 8px 7px;
+                background-color: transparent;
+                color: rgba(255, 255, 255, 0.911);
+            }
+        }
+        .block2{
+            width: 94%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 0px;
+            button{
+                width: 20%;
+                color: white;
+                border-radius: 999px;
+                padding: 7px 0px;
+                font-size: 16px;
+                font-weight: 700;
+                background-color: rgba(133, 133, 133, 0.205);
+                border: white solid 2px;
+                @media (max-width: 599px) {
+                    width: 25%;
+                    padding: 7px 3px;
+                }
+            }
+        }
+    }
+}
+@keyframes abre {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 200px;
+    }
+}

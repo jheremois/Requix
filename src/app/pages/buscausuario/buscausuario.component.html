@@ -1,0 +1,10 @@
+<app-header></app-header>
+<section>
+    <div class="userList">
+        <div class="list">
+            <div class="user prima" *ngFor="let user of users">
+                <app-user [theuser]="user"></app-user>
+            </div>
+        </div>
+    </div>
+</section>
