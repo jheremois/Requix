@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { HttpClient } from "@angular/common/http";
-import { UserService } from 'src/app/services/userservice/user.service';
+import { UserService } from '../../services/userservice/user.service';
 
 @Component({
   selector: 'app-create-form',
